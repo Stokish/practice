@@ -14,7 +14,7 @@ int main()
           mx = z;
       if (k%2 == 0 && k>mx)
           mx=k;
-       cout<<mx;
+       cout<<mx<<endl;
     }
     else
     {
