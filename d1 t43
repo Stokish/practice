@@ -24,6 +24,9 @@ case 10:
 case 11:
     cout<<"Autumn"<<endl;
     break;
+default:
+	cout << "Error"<<endl;
+	break;
 }
 return 0;
 }
