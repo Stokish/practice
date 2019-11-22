@@ -13,7 +13,7 @@ int main() {
         for (int j = i + 1; j <= n; j++) {
             if (ch[i] >= '0' && ch[i] <= '9') {
                 if (ch[j] >= '0' && ch[j] <= '9')
-                    ch[j] =  (char) ((int)('A') + rand() % (int)('Z'));
+                    ch[j] =  (char)('A' + rand() % 'Z');
                 else
                     continue;
             } else
@@ -28,7 +28,7 @@ int main() {
     if(k>1) {
         for (int t = 0; t < n; t++){
             if(ch[t]='_')
-            ch[t] =(char) ((int)('A') + rand() % (int)('Z'));
+            ch[t] = (char) ('A' + rand() % 'Z');
         }
     }
     int a;
