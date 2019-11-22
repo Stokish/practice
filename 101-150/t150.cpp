@@ -13,25 +13,27 @@ int main() {
         for (int j = i + 1; j <= n; j++) {
             if (ch[i] >= '0' && ch[i] <= '9') {
                 if (ch[j] >= '0' && ch[j] <= '9')
-                    ch[j] =  (char) ('A' + rand() % 'Z');
+                    ch[j] =  (char) ((int)('A') + rand() % (int)('Z'));
                 else
                     continue;
             } else
                 continue;
         }
     }
-    int a;
-    a = rand() % n;
-    ch[a]='_';
+
     for (int t = 0; t < n; t++) {
         if(ch[t]=='_')
             k++;
     }
-    
     if(k>1) {
-        for (int t = 0; t < n; t++)
-            ch[t] = (char) ('A' + rand() % 'Z');
+        for (int t = 0; t < n; t++){
+            if(ch[t]='_')
+            ch[t] =(char) ((int)('A') + rand() % (int)('Z'));
+        }
     }
+    int a;
+    a = rand() % (n-1);
+    ch[a]='_';
 
     for (int i = 0 ; i < n; i++){
         cout << ch[i];
